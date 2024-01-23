@@ -1,5 +1,6 @@
 from pathlib import Path
 
+
 def display_directory(directory, options):
     contents = list(directory.iterdir())
 
@@ -45,6 +46,7 @@ def display_directory(directory, options):
             print(directory)
             if '-r' in options:
                 display_directory(directory, options)
+
 
 def main():
     while True:
